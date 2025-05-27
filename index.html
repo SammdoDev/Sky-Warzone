@@ -1,6 +1,26 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000; /* latar belakang game */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        canvas {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
     <script>
         var layoutSize = { 'w': 768, 'h': 1024 };
@@ -14,7 +34,7 @@
     <script src="scenePilihHero.js"></script>
     <script src="scenePlay.js"></script>
     <script src="sceneGameOver.js"></script>
-    <title>Shooter Game</title>
+    <title>Sky Warzone</title>
 </head>
 <body>
     <script>
@@ -24,7 +44,8 @@
             height: 1024,
             scene: [sceneMenu, scenePilihHero, scenePlay, sceneGameOver],
             scale: {
-                autoCenter: Phaser.Scale.CENTER_BOTH,
+                mode: Phaser.Scale.FIT,
+                autoCenter: Phaser.Scale.CENTER_BOTH
             }
         };
 
