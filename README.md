@@ -2,6 +2,8 @@
 
 **Aircraft Shooter** adalah game tembak-tembakan pesawat bergaya arcade yang penuh aksi dan tantangan. Kendalikan pesawat tempurmu, hindari peluru musuh, dan kalahkan musuh sebanyak mungkin untuk mendapatkan skor tertinggi!
 
+🎮 **[➡️ Mainkan Sekarang](https://sammdodev.github.io/Sky-Warzone/)**
+
 ![Gameplay](./github/gameplay.jpg)
 
 ## 🎮 Fitur Utama
@@ -39,6 +41,6 @@ Game ini dibuat dengan:
 Jika ingin menjalankan secara lokal:
 
 ```bash
-git clone https://sammdodev.github.io/Sky-Warzone/
-cd aircraft-shooter
+git clone https://github.com/sammdodev/Sky-Warzone.git
+cd Sky-Warzone
 start index.html
